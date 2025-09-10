@@ -1,6 +1,8 @@
-import logo1 from "../assets/richmond logo.jfif";
 import { useNavigate } from "react-router";
 import { FaArrowCircleUp, FaShareAlt, FaDownload } from "react-icons/fa";
+
+const grandLogo = new URL("../assets/grandlogo.png", import.meta.url).href;
+
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -10,11 +12,11 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-[#fe8a68] px-4 py-2 sticky top-0 z-50 shadow-md">
+    <nav className="bg-purple-600 px-4 py-2 sticky top-0 z-50 shadow-md">
       <div className="flex items-center justify-between text-white max-w-7xl mx-auto">
         <div className="flex items-center space-x-3">
           <img
-            src={logo1}
+            src={grandLogo}
             alt="Logo"
             className="h-14 w-14 sm:h-16 sm:w-16 rounded-full"
           />

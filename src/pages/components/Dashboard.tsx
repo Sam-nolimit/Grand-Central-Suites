@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <main>
       <NavBar />
-      <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-[#fe8a68] rounded hover:text-white">
+      <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-purple-600 rounded hover:bg-purple-800">
     <MapButton label='Map' destLat={0.000} destLng={0.00}/>
 </div>
 

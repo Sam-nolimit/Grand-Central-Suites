@@ -35,7 +35,7 @@ const MapButton: React.FC<MapButtonProps> = ({ label = "Map", destLat, destLng, 
     <div>
       <button
         onClick={handleDirections}
-        className="flex items-center space-x-2  text-white px-4 py-2 rounded-md hover:text-[#ff6f4d] transition"
+        className="flex items-center space-x-2  text-white px-4 py-2 rounded-md hover:text-purple-600 transition"
       >
         <FaMap size={20} />
         <span>{label}</span>
