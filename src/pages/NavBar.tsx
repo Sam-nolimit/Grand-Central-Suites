@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router";
 import { FaArrowCircleUp, FaShareAlt, FaDownload } from "react-icons/fa";
 
-const grandLogo = new URL("../assets/grandlogo.png", import.meta.url).href;
+const grandLogo = new URL("../assets/grandlogo.PNG", import.meta.url).href;
 
 
 const NavBar = () => {
@@ -28,7 +28,6 @@ const NavBar = () => {
           </button>
         </div>
 
-        {/* Right side: Actions */}
         <div className="flex items-center space-x-4">
           <button className="hover:opacity-80 transition">
             <FaDownload size={28} />
