@@ -1,10 +1,10 @@
 import backgroundImage from "../assets/richmond bg.jfif";
 import logo1 from "../assets/richmond logo.jfif";
-import { FaLocationPin, FaMap, FaPhone } from "react-icons/fa6";
+import { FaLocationPin, FaPhone } from "react-icons/fa6";
 import { FaEnvelope, FaUserCircle } from "react-icons/fa";
-import { Link } from "react-router";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { useNavigate } from "react-router";
+import MapButton from "./components/MapButton";
 
 const Home = () => {
      const navigate = useNavigate();
@@ -56,16 +56,9 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex items-center space-x-2 font-semibold text-sm sm:text-base">
-            <FaMap size={24} className="sm:size-30" />
-            <Link
-              target="_blank"
-              to="https://www.google.com/maps/dir/?api=1&destination=52.1727599,21.0262192"
-              className="flex flex-row items-center hover:text-[#fe8a68] transition"
-            >
-              Directions
-              <HiArrowUpRight className="w-6 h-6 sm:w-8 sm:h-8 p-1 ml-1 rounded-md" />
-            </Link>
+          <div className="flex items-center hover:text-[#ff6f4d] font-semibold text-sm sm:text-base">
+           <MapButton label="Get Directions" destLat={0} destLng={0}/>
+              <HiArrowUpRight className="w-6 h-6 sm:w-8 sm:h-8 rounded-md" />
           </div>
 
           <button onClick={goToDashboard} className="mt-6 bg-[#fe8a68] text-white w-40 sm:w-48 h-10 sm:h-12 rounded-md text-lg sm:text-xl font-semibold hover:bg-[#ff6f4d] transition">

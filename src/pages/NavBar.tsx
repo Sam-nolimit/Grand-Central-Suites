@@ -12,7 +12,6 @@ const NavBar = () => {
   return (
     <nav className="bg-[#fe8a68] px-4 py-2 sticky top-0 z-50 shadow-md">
       <div className="flex items-center justify-between text-white max-w-7xl mx-auto">
-        {/* Left side: Logo + Button */}
         <div className="flex items-center space-x-3">
           <img
             src={logo1}
