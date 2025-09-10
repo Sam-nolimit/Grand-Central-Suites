@@ -4,8 +4,8 @@ import { HiArrowUpRight } from "react-icons/hi2";
 import { useNavigate } from "react-router";
 import MapButton from "./components/MapButton";
 
-const grandLogo = new URL("../assets/grandlogo.png", import.meta.url).href;
-const backgroundImage = new URL("../assets/grandbg.png", import.meta.url).href;
+const grandLogo = new URL("../assets/grandlogo.PNG", import.meta.url).href;
+const backgroundImage = new URL("../assets/grandbg.PNG", import.meta.url).href;
 
 
 const Home = () => {
