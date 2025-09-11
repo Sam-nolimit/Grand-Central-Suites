@@ -12,12 +12,11 @@ const Dashboard = () => {
       <NavBar />
 
       <section className="flex flex-1 flex-row w-full">
-        {/* Sidebar */}
+
         <aside className="w-2/4 min-w-[200px] bg-gray-100 border-r overflow-y-auto">
           <CardSideBar onSelectService={setSelectedService} />
         </aside>
 
-        {/* Service details */}
         <section className="flex-1 p-4 overflow-y-auto">
           {selectedService ? (
             <ServiceDetails service={selectedService} />
@@ -27,7 +26,6 @@ const Dashboard = () => {
         </section>
       </section>
 
-      {/* Floating map button */}
       <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-purple-600 rounded hover:bg-purple-800">
         <MapButton label="Map" destLat={0.0} destLng={0.0} />
       </div>

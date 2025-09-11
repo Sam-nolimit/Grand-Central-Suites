@@ -24,6 +24,7 @@ import {
 } from "react-icons/fa6";
 
 import parking from "../../assets/parking.jpg";
+import football from "../../assets/football.jpg";
 import wifi from "../../assets/wifi.jpg";
 
 interface ServiceDetailsProps {
@@ -73,6 +74,7 @@ const ServiceDetails: React.FC<ServiceDetailsProps> = ({ service }) => {
       heading = "Football Event Tickets";
       description = "Buy or access football match tickets.";
       Icon = FaTicketAlt;
+            image = football;
       break;
     case "instagram":
       heading = "Instagram";
